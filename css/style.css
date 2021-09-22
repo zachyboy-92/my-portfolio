@@ -1,0 +1,570 @@
+.about {
+  background-color: coral;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.about #about__image {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 40px 40px;
+  border-radius: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .about #about__image {
+    float: none;
+    margin: 10px 39%;
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about #about__image {
+    float: none;
+    margin: 10px 34%;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.about .aboutme {
+  position: relative;
+  bottom: 290px;
+  left: 350px;
+  width: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .aboutme {
+    font-size: 1.6rem;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .aboutme {
+    font-size: 1.4rem;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .aboutme {
+    font-size: 1.2rem;
+    width: 90%;
+    bottom: 0px;
+    left: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about .aboutme {
+    font-size: 1.2rem;
+    width: 90%;
+    bottom: 0px;
+    left: 20px;
+    text-align: center;
+  }
+}
+
+.about .aboutme #about {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .about .aboutme #about {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .aboutme #about {
+    font-size: 1.5rem;
+  }
+}
+
+.about .aboutme p {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .about .aboutme p {
+    font-size: 1rem;
+  }
+}
+
+.about .aboutme #firstparagraph {
+  padding-bottom: 5px;
+}
+
+.about .aboutme .highlighted {
+  color: yellow;
+}
+
+.about .skills {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  display: flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .about .skills {
+    width: 70%;
+    margin-left: 15%;
+    padding-right: 3%;
+  }
+}
+
+.about .skills #skills__headline {
+  font-size: 1.3rem;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .about .skills #skills__headline {
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .skills #skills__headline {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.about .skills .language {
+  display: inline-block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 50px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .about .skills .language {
+    margin-right: 25px;
+  }
+}
+
+.about .skills .language img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .skills .language img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .skills .language img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .skills .language img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.about .skills .language:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.about .skills .language span {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .about .skills .language span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .skills .language span {
+    font-size: 0.9rem;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about .skills .language span {
+    font-size: 0.8rem;
+    padding-top: 10px;
+  }
+}
+
+.contact {
+  width: 100vw;
+  height: 80vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact #contact-info {
+  background-color: coral;
+}
+
+.contact #contact-info h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.contact #contact-info h5 {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.contact #contact-info input {
+  display: block;
+  width: 50vw;
+  margin: 5px auto;
+  padding-left: 10px;
+  background-color: black;
+  color: white;
+}
+
+.contact #contact-info input::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact #contact-info input:-ms-input-placeholder {
+  color: white;
+}
+
+.contact #contact-info input::-ms-input-placeholder {
+  color: white;
+}
+
+.contact #contact-info input::placeholder {
+  color: white;
+}
+
+.contact #contact-info #name {
+  margin-top: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact #contact-info #email {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact #contact-info #message {
+  padding-bottom: 30vh;
+}
+
+.contact #contact-info button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.3rem;
+  background-color: black;
+  color: white;
+  margin: 30px 46vw;
+  letter-spacing: 2px;
+}
+
+.contact #contact-info button span:hover {
+  color: coral;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+footer {
+  height: 20vh;
+  width: 100vw;
+}
+
+footer #social__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+
+footer #social__media .img {
+  padding-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+footer #footer__copyright {
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8vh;
+  background-color: coral;
+}
+
+main nav .logo {
+  width: 100px;
+  height: 100px;
+}
+
+main nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+main nav .nav-links .nav-link {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  padding-top: 40px;
+  text-shadow: 1px 1px red;
+}
+
+main nav .burger {
+  display: none;
+}
+
+main nav .burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  main nav .nav-links {
+    width: 60%;
+    cursor: pointer;
+  }
+  main nav .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 87vh;
+    top: 13vh;
+    background-color: coral;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  main nav .nav-links li {
+    opacity: 0;
+  }
+  main nav .burger {
+    display: block;
+  }
+  main nav .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+main nav .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+main nav .toggle .line2 {
+  opacity: 0;
+}
+
+main nav .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+main #intro {
+  display: flexbox;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25vh;
+  text-shadow: 1px 1px coral;
+}
+
+main #intro h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  main #intro h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #intro h2 {
+    font-size: 2.2em;
+  }
+}
+
+main #intro #name {
+  color: #eb8934;
+}
+
+main #intro #intro__button {
+  width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  border-radius: 25px;
+  margin: 20px 42%;
+}
+
+@media screen and (max-width: 1200px) {
+  main #intro #intro__button {
+    margin: 20px 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main #intro #intro__button {
+    margin: 20px 38%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #intro #intro__button {
+    margin: 20px 36%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #intro #intro__button {
+    margin: 20px 30%;
+  }
+}
+
+main #intro #intro__button .fas {
+  margin: -4px 2px;
+}
+
+main #intro #intro__button:hover {
+  background-color: black;
+  color: #eb8934;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+main #intro #intro__button:hover .fas {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
