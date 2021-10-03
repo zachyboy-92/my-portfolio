@@ -11,17 +11,17 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
-    />
+    /> -->
   </head>
   <body>
     <main>
       <nav>
-        <a class="logo" href="#">Hajar.M</a>
+        <img class="logo" src="./logo.png"></img>
         <ul class="nav-links">
           <li class="nav-link"><a class="link" href="#"></a>Home</li>
           <li class="nav-link"><a class="link" href="#"></a>About</li>
@@ -38,7 +38,7 @@
 
       <div id="intro">
         <h2>Hello, I'm <em id="name">Zakaria Merfouk</em></h2>
-        <h2>I'm a front-end web developer</h2>
+        <h2>I'm a Full-Stack Developer</h2>
         <button id="intro__button">
           View my work
           <span><i class="fas fa-arrow-right"></i></span>
@@ -101,6 +101,18 @@
             <img class="skills__image" src="./react.png" alt="" />
             <span>React.js</span>
           </div>
+          <div class="language">
+            <img class="skills__image" src="./java.png" alt="" />
+            <span>Java</span>
+          </div>
+          <div class="language">
+            <img class="skills__image" src="./spring-boot.png" alt="" />
+            <span>Spring Boot</span>
+          </div>
+          <div class="language">
+            <img class="skills__image" src="./Mysql.png" alt="" />
+            <span>MySQL</span>
+          </div>
         </div>
       </div>
     </section>
@@ -108,40 +120,68 @@
     <section class="projects">
       <h1>Projects</h1>
       <div class="row project-cards">
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card" id="card-one" style="width: 20%">
-            <img src="..." class="card-img-top" alt="..." />
+          <div class="card" id="card-one">
+            <img src="./images/movie-night-logo.png" class="card-img-top" alt="movie night logo" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                MovieNight is a movies and tv-series information website. It was built using HTML5, CSS3 and JavaScript ES5 and ES6.
               </p>
             </div>
+            <div class='card-links'>
+              <button><a href="https://zachyboy-92.github.io/movie-night/index.html">Link</a></button>
+              <button><a href="https://github.com/zachyboy-92/movie-night">GitHub</a></button>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12">
-          <div class="card" id="card-two" style="width: 20%">
-            <img src="..." class="card-img-top" alt="..." />
+        
+          <div class="card" id="card-two">
+            <img src="./images/travel-advisor-logo.png" class="card-img-top" alt="travel advisor logo" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                TravelAdvisor is a travel information website built using React and CSS3.
               </p>
             </div>
+            <div class='card-links'>
+              <button><a href="https://travel-advisor-ivory.vercel.app/">Link</a></button>
+              <button><a href="https://github.com/zachyboy-92/travel-advisor">GitHub</a></button>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12"></div>
-        <div class="card" id="card-three" style="width: 20%">
-          <img src="..." class="card-img-top" alt="..." />
+    
+        <div class="card" id="card-three">
+          <img src="./images/forkify-logo.png" class="card-img-top" alt="forkify logo" />
           <div class="card-body">
             <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Forkify is a recipe application. It was built using HTML5, Sass and Vanila JavaScript.
             </p>
           </div>
+          <div class='card-links'>
+            <button><a href="https://forkify-zack.netlify.app/">Link</a></button>
+            <button><a href="https://github.com/zachyboy-92/forkify-project">GitHub</a></button>
+          </div>
+      </div>
+      <div class="card" id="card-four">
+        <img src="./images/adan-time-logo.png" class="card-img-top" alt="adan time logo" />
+        <div class="card-body">
+          <p class="card-text">
+            AdanTime displays muslims adan time by country and city. It was built using HTML5, CSS3 and JavaScript.
+          </p>
         </div>
+        <div class='card-links'>
+          <button><a href="https://adan-time.netlify.app/">Link</a></button>
+          <button><a href="https://github.com/zachyboy-92/adan-time">GitHub</a></button>
+        </div>
+      </div>
+      <div class="card" id="card-four">
+        <img src="./images/calculator.png" class="card-img-top" alt="calculator logo" />
+        <div class="card-body">
+          <p class="card-text">
+            Calculator is built using HTML5, CSS3 and JavaScript.
+          </p>
+        </div>
+        <div class='card-links'>
+          <button><a href="https://zaks-calculator.netlify.app/">Link</a></button>
+          <button><a href="https://github.com/zachyboy-92/calculator">GitHub</a></button>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -168,7 +208,7 @@
       </div>
     </footer>
 
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
@@ -182,7 +222,7 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <script src="portfolio.js"></script>
   </body>
 </html>
