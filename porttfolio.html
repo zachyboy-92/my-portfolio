@@ -11,22 +11,16 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    /> -->
   </head>
   <body>
-    <main>
+    <main id='home'>
       <nav>
         <img class="logo" src="./logo.png"></img>
         <ul class="nav-links">
-          <li class="nav-link"><a class="link" href="#"></a>Home</li>
-          <li class="nav-link"><a class="link" href="#"></a>About</li>
-          <li class="nav-link"><a class="link" href="#"></a>Projects</li>
-          <li class="nav-link"><a class="link" href="#"></a>Contact</li>
+          <a class="link" href="#home"><li class="nav-link">Home</li></a>
+          <a class="link" href="#about"><li class="nav-link">About</li></a>
+          <a class="link" href="#projects"><li class="nav-link">Projects</li></a>
+          <a class="link" href="#contact"><li class="nav-link">Contact</li></a>
         </ul>
 
         <div class="burger">
@@ -40,13 +34,13 @@
         <h2>Hello, I'm <em id="name">Zakaria Merfouk</em></h2>
         <h2>I'm a Full-Stack Developer</h2>
         <button id="intro__button">
-          View my work
+          <a id='to-projects' href="#projects">View my work</a>
           <span><i class="fas fa-arrow-right"></i></span>
         </button>
       </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
       <div>
         <img id="about__image" src="./zack.JPG" alt="" />
       </div>
@@ -117,7 +111,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
       <h1>Projects</h1>
       <div class="row project-cards">
           <div class="card" id="card-one">
@@ -197,7 +191,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div id="contact-info">
         <h1>contact</h1>
         <h5>Have a question or want to work together?</h5>
@@ -223,22 +217,6 @@
         <p>Zakaria Merfouk © 2020</p>
       </div>
     </footer>
-
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="portfolio.js"></script>
   </body>
 </html>

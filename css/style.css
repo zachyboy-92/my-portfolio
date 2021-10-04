@@ -29,6 +29,10 @@ main nav {
   align-items: center;
   min-height: 8vh;
   background-color: coral;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 main nav .logo {
@@ -50,6 +54,15 @@ main nav .nav-links .nav-link {
   letter-spacing: 3px;
   padding-top: 40px;
   text-shadow: 1px 1px red;
+}
+
+main .link {
+  text-decoration: none;
+  color: black;
+}
+
+main .link:hover {
+  color: white;
 }
 
 main nav .burger {
@@ -218,7 +231,6 @@ main #intro #intro__button .fas {
 
 main #intro #intro__button:hover {
   background-color: black;
-  color: #eb8934;
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
 }
@@ -226,6 +238,16 @@ main #intro #intro__button:hover {
 main #intro #intro__button:hover .fas {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  color: #eb8934;
+}
+
+#to-projects {
+  text-decoration: none;
+  color: black;
+}
+
+#to-projects:hover {
+  color: #eb8934;
 }
 
 /* About */
