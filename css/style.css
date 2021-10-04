@@ -73,8 +73,8 @@ main nav .burger div {
   main nav .nav-links {
     position: absolute;
     right: 0px;
-    height: 87vh;
-    top: 13vh;
+    height: 90vh;
+    top: 10vh;
     background-color: coral;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -348,6 +348,7 @@ main #intro #intro__button:hover .fas {
   display: flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  height: 55vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -389,7 +390,8 @@ main #intro #intro__button:hover .fas {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: 50px;
-  margin-top: 0px;
+  margin-top: 10px;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -511,13 +513,23 @@ main #intro #intro__button:hover .fas {
   font-size: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .projects {
+    height: auto;
+  }
+  .card {
+    width: 40vw;
+  }
+  .card-links {
+    width: 80%;
+  }
+}
+
 /* Contact */
 
 .contact {
   width: 100vw;
   height: 80vh;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .contact #contact-info {
@@ -588,14 +600,28 @@ main #intro #intro__button:hover .fas {
   font-size: 1.3rem;
   background-color: black;
   color: white;
-  margin: 30px 46vw;
+  margin: 30px auto;
   letter-spacing: 2px;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .contact #contact-info button span:hover {
   color: coral;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact #contact-info input {
+    width: 70vw;
+  }
 }
 
 /* Footer */
