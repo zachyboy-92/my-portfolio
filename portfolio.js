@@ -23,3 +23,25 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// Email
+let formSubmitted = document.getElementById("form");
+function sendMail(params) {
+  let tempParams = {
+    name: document.getElementById("from-name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  formSubmitted.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs
+      .send("service_gtovmhn", "template_wcu6yxb", tempParams)
+      .then((res) => {
+        console.log("success", res.status);
+        console.log(tempParams);
+      });
+    formSubmitted.reset();
+  });
+}

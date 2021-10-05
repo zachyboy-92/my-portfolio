@@ -11,11 +11,17 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+  (function() {
+    emailjs.init("user_mw21lTZBiCJzPGeXCHxw2");
+  })();
+</script>
   </head>
   <body>
     <main id='home'>
       <nav>
-        <img class="logo" src="./logo.png"></img>
+        <img class="logo" src="./images/logo.png"></img>
         <ul class="nav-links">
           <a class="link" href="#home"><li class="nav-link">Home</li></a>
           <a class="link" href="#about"><li class="nav-link">About</li></a>
@@ -42,7 +48,7 @@
 
     <section class="about" id="about">
       <div>
-        <img id="about__image" src="./zack.JPG" alt="" />
+        <img id="about__image" src="./images/zack.JPG" alt="" />
       </div>
 
       <div class="aboutme">
@@ -54,57 +60,50 @@
           web development world, I quickly fell in love with coding.
         </p>
 
+
         <p class="secondparagraph">
-          As a self-taught developer, I started my learning journey on
-          <strong class="highlighted">Codeacademy</strong> and
-          <strong class="highlighted">Youtube</strong> tutorials. I then
-          enrolled for 3 courses on
-          <strong class="highlighted">Udemy</strong> to master the newly gained
-          skills. The first two courses that I completed were
-          <strong class="highlighted">Web Development</strong> courses which
-          gave me a good foundation of
-          <em class="highlighted">HTML, CSS, Boostrap</em> and
-          <em class="highlighted">JavaScript</em>. The third one was a
-          <em class="highlighted">React</em> course. Learning the back-end is
-          currently my next target to become to full-stack developer.
+          I started my Software Engineering journey on <strong class="highlighted">Codeacademy</strong> where I completed <em class="highlighted">Front-End Engineer Career Path</em> and
+          <strong class="highlighted">FreeCodeCamp</strong> where I received certifications for <em class="highlighted">JavaScript Algorithms and Data Structures and Responsive Web Design</em>.
+          I am Currently enrolled in <strong class="highlighted">Per Scholas</strong> <em class="highlighted">Full-Stack Developer Bootcamp</em>, Where I was able to build a couple of projects that showcases all the knowledge I have 
+          acquired so far. I have also learned how to pair program and work with others to debug code. I am still in the beginning of my journey and I am learning new things everyday.
         </p>
 
         <div class="skills">
           <h1 id="skills__headline">SKILLS</h1>
           <div class="language">
-            <img class="skills__image" src="./html.png" alt="" />
+            <img class="skills__image" src="./images/html.png" alt="" />
             <span>HTML5</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./css.png" alt="" />
+            <img class="skills__image" src="./images/css.png" alt="" />
             <span>CSS3</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./boostrap.png" alt="" />
+            <img class="skills__image" src="./images/boostrap.png" alt="" />
             <span>Boostrap</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./sass.png" alt="" />
+            <img class="skills__image" src="./images/sass.png" alt="" />
             <span>Sass</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./js.png" alt="" />
+            <img class="skills__image" src="./images/js.png" alt="" />
             <span>JavaScript</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./react.png" alt="" />
+            <img class="skills__image" src="./images/react.png" alt="" />
             <span>React.js</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./java.png" alt="" />
+            <img class="skills__image" src="./images/java.png" alt="" />
             <span>Java</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./spring-boot.png" alt="" />
+            <img class="skills__image" src="./images/spring-boot.png" alt="" />
             <span>Spring Boot</span>
           </div>
           <div class="language">
-            <img class="skills__image" src="./Mysql.png" alt="" />
+            <img class="skills__image" src="./images/Mysql.png" alt="" />
             <span>MySQL</span>
           </div>
         </div>
@@ -195,13 +194,13 @@
       <div id="contact-info">
         <h1>contact</h1>
         <h5>Have a question or want to work together?</h5>
-        <form>
+        <form id="form">
           <div class="input-container">
-            <input id="name" type="text" placeholder="Name" />
+            <input id="from-name" type="text" placeholder="Name" />
             <input id="email" type="email" placeholder="Enter email" />
             <input id="message" type="text" placeholder="Your Message" />
           </div>
-          <button><span>SUBMIT</span></button>
+          <button id="submit-form" onclick=sendMail()><span>SUBMIT</span></button>
         </form>
       </div>
     </section>
