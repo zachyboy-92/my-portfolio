@@ -22,8 +22,6 @@ const navSlide = () => {
   });
 };
 
-navSlide();
-
 // Email
 let formSubmitted = document.getElementById("form");
 function sendMail(params) {
@@ -45,3 +43,5 @@ function sendMail(params) {
     formSubmitted.reset();
   });
 }
+
+navSlide();
