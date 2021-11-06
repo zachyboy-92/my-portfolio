@@ -29,6 +29,7 @@ main nav {
   align-items: center;
   min-height: 8vh;
   background-color: coral;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,9 +87,10 @@ main nav .burger div {
   main nav .nav-links {
     position: fixed;
     right: 0px;
-    height: 90vh;
-    top: 10vh;
+    height: 50vh;
+    top: 12vh;
     background-color: coral;
+    opacity: 0.8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -116,6 +118,11 @@ main nav .burger div {
   main nav .nav-active {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
+  }
+
+  .link {
+    font-size: 1.3rem;
+    font-weight: 700;
   }
 }
 
@@ -233,6 +240,7 @@ main #intro #intro__button:hover {
   background-color: black;
   -webkit-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
+  color: #eb8934;
 }
 
 main #intro #intro__button:hover .fas {
@@ -252,7 +260,7 @@ main #intro #intro__button:hover .fas {
 
 /* About */
 .about {
-  background-color: coral;
+  background-color: rgb(242, 179, 156);
   height: 100vh;
   overflow-y: hidden;
 }
@@ -469,6 +477,9 @@ main #intro #intro__button:hover .fas {
 }
 
 @media screen and (max-width: 992px) {
+  .about {
+    height: auto;
+  }
   .about .skills .language span {
     font-size: 1rem;
   }
@@ -502,24 +513,37 @@ main #intro #intro__button:hover .fas {
 .project-cards {
   display: flex;
   justify-content: space-evenly;
+  margin: 0 auto;
   flex-wrap: wrap;
+  width: 70%;
 }
 
 .card {
-  width: 30vw;
-  height: 38vh;
+  width: 20vw;
+  height: 40vh;
   margin: 1rem auto;
   border: 1px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(242, 179, 156);
+  color: black;
+}
+
+.card-text {
+  font-size: 1rem;
 }
 
 .card-img-top {
   width: 100%;
-  height: 60%;
+  height: 45%;
 }
 
 .card-body {
   margin: 10px;
-  height: 20%;
+  height: 25%;
 }
 
 .card-links {
@@ -533,7 +557,7 @@ main #intro #intro__button:hover .fas {
   width: 70px;
   height: 25px;
   border-radius: 10px;
-  background-color: salmon;
+  background-color: coral;
 }
 
 .card-links a {
@@ -546,8 +570,9 @@ main #intro #intro__button:hover .fas {
   .projects {
     height: auto;
   }
+
   .card {
-    width: 40vw;
+    width: 50vw;
   }
   .card-links {
     width: 80%;
@@ -562,7 +587,7 @@ main #intro #intro__button:hover .fas {
 }
 
 .contact #contact-info {
-  background-color: coral;
+  background-color: rgb(242, 179, 156);
 }
 
 .contact #contact-info h1 {
@@ -626,13 +651,12 @@ main #intro #intro__button:hover .fas {
 }
 
 .contact #contact-info button {
-  width: 150px;
-  height: 50px;
-  font-size: 1.3rem;
+  width: 100px;
+  height: 40px;
+  font-size: 1.1rem;
   background-color: black;
   color: white;
   margin: 30px auto;
-  letter-spacing: 2px;
   text-align: center;
   border-radius: 20px;
 }
@@ -674,8 +698,8 @@ footer #social__media {
 
 footer #social__media .img {
   padding-right: 10px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 25px;
 }
 
 footer #footer__copyright {
